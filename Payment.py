@@ -30,7 +30,6 @@ if __name__ == "__main__":
             best_similarity = similarity
             idx = i
             name = entry.get("name")
-
     new_balance = db[idx].get("balance") - cost
     if new_balance < 0:
         print("Transaction failed. Insufficient funds.")
